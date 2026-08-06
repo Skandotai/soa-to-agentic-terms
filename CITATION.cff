@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use or reference this work, please cite it as below."
+title: "SOA-to-Agentic AI Terminology Mapping"
+type: dataset
+authors:
+  - name: "Skan, Inc."
+    website: "https://www.skan.ai"
+repository-code: "https://github.com/Skan-dot-ai/soa-to-agentic-terms"
+url: "https://www.skan.ai"
+abstract: >
+  A structured mapping between Service-Oriented Architecture (SOA) concepts
+  and their Agentic AI equivalents, offered as a starting vocabulary for the
+  agentic enterprise. Twenty-eight mapped term pairs, published with a companion
+  whitepaper on standardizing Agentic AI terminology.
+keywords:
+  - agentic-ai
+  - enterprise-ai
+  - service-oriented-architecture
+  - terminology
+  - ontology
+  - ai-governance
+license: "CC-BY-4.0"
+version: 2.0.0
+date-released: "2026-08-05"
