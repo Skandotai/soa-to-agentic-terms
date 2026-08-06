@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOA-to-Agentic AI Terminology Mapping — Skan.ai</title>
+<meta name="description" content="Twenty-eight Service-Oriented Architecture concepts translated into their Agentic AI equivalents — a shared vocabulary for the agentic enterprise, from Skan.ai.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:title" content="SOA-to-Agentic AI Terminology Mapping">
+<meta property="og:description" content="Twenty-eight SOA concepts translated into their Agentic AI equivalents — a shared vocabulary for the agentic enterprise, from Skan.ai.">
+<meta property="og:type" content="article">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Skan<span>.ai</span> — Agentic AI Taxonomy</a>
+    <nav>
+      <a href="about/index.html">About</a>
+      <a href="#downloads">Downloads</a>
+      <a href="https://www.skan.ai" target="_blank" rel="noopener">skan.ai</a>
+      <a href="https://github.com/Skan-dot-ai/soa-to-agentic-terms" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero wrap">
+  <p class="eyebrow">The vocabulary problem</p>
+  <h1 style="max-width: 20ch;">SOA-to-Agentic AI Terminology Mapping</h1>
+  <p class="lede">Ask three practitioners to define an "AI agent" and you'll get four answers. The same goes for "workflow," "orchestration," and "task." That isn't an academic quibble — it's why integrations break at the seams, why buyers can't tell two products apart, and why nobody can write a governance policy that means the same thing twice. Enterprise computing had this exact problem before SOA gave it a shared grammar. So rather than invent a vocabulary from scratch, we started from the one that already worked.</p>
+  <div class="cta-row">
+    <a class="btn primary" href="https://github.com/Skan-dot-ai/soa-to-agentic-terms" target="_blank" rel="noopener">View on GitHub</a>
+    <a class="btn" href="https://github.com/Skan-dot-ai/soa-to-agentic-terms/blob/main/mapping-table.json" target="_blank" rel="noopener">Download SOA-Agentic Terms JSON</a>
+  </div>
+</div>
+
+<section class="wrap divider-top">
+  <h2>Agentic AI Taxonomy V2 (based on SOA)</h2>
+  <p>We didn't invent the agentic terms on the right, and SOA isn't ours to claim. We set the two vocabularies side by side, because the quickest way to get an industry to agree on what to call something is usually to borrow from a naming scheme it already settled once. Related concepts sit next to each other, so you can read straight down either column.</p>
+
+  <div class="rosetta">
+    <div class="rosetta-header">
+      <p class="eyebrow soa">SOA era</p>
+      <span></span>
+      <p class="eyebrow agentic">Agentic era</p>
+    </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Service / Microservice</p>
+          <p class="rosetta-desc">A discrete unit of functionality that can be accessed remotely and acted upon independently, deployed and versioned on its own so that changing it does not require changing its consumers.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Agent</p>
+          <p class="rosetta-desc">An autonomous AI entity that can perform specific tasks, make decisions, and interact with other agents, choosing how to accomplish an objective rather than following a fixed sequence of steps.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Microservices</p>
+          <p class="rosetta-desc">Architectural approach using small, independently deployable services, each owning a narrow slice of business capability so teams can build, release, and scale them separately.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Agent Tools</p>
+          <p class="rosetta-desc">Specialized, focused AI agents designed for specific tasks within larger systems, narrow enough to be reasoned about, tested, and replaced individually rather than as part of one monolithic agent.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Common Services</p>
+          <p class="rosetta-desc">Reusable services that provide shared functionality across multiple applications — authentication, notification, document generation — maintained once and consumed everywhere.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Agentic Tools</p>
+          <p class="rosetta-desc">Reusable AI capabilities and functions that agents can utilize to perform common tasks, exposed as a shared library so every agent does not reimplement the same retrieval, extraction, or calculation.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Service Contract</p>
+          <p class="rosetta-desc">A formal specification defining how to interact with a service, including inputs, outputs, and constraints, so consumers integrate against the contract rather than the implementation.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Agent Contract</p>
+          <p class="rosetta-desc">A specification defining an agent's capabilities, interaction protocols, and behavioral constraints — what it may do on its own, what it must escalate, and what callers can rely on.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Service Registry</p>
+          <p class="rosetta-desc">A directory where services are published and can be discovered by consumers, holding the endpoint, version, and contract for each registered service.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Agent Catalog</p>
+          <p class="rosetta-desc">A repository where agents are registered and can be discovered by other agents or orchestrators, recording each agent's capabilities, ownership, and permitted scope.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Service Discovery</p>
+          <p class="rosetta-desc">A dynamic mechanism for locating available services at runtime, resolving which instance to call as deployments scale up and down.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Agent Discovery</p>
+          <p class="rosetta-desc">A dynamic mechanism for locating available agents and their current capabilities at runtime, so work is routed to whichever agent is actually able and permitted to handle it.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Service Bus (ESB)</p>
+          <p class="rosetta-desc">Enterprise service bus providing message routing, transformation, and integration capabilities, so systems that do not share a data format can still exchange work.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Execution Mesh</p>
+          <p class="rosetta-desc">Central orchestration layer managing agent lifecycle, routing, and coordination, carrying work between agents and the systems they act on.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">API Gateway</p>
+          <p class="rosetta-desc">A single entry point managing routing, security, authentication, and rate limiting for service consumers, so those concerns are handled once at the edge rather than in every service.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Agent Gateway</p>
+          <p class="rosetta-desc">A single entry point managing routing, authentication, and rate limiting for external systems and human users interacting with agents, and the place where access policy is applied.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Orchestration (BPEL)</p>
+          <p class="rosetta-desc">Coordinating multiple services to execute complex business processes, with the sequence, branching, and error handling defined centrally.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Agentic Orchestrator</p>
+          <p class="rosetta-desc">System that coordinates multiple agents to execute complex automated workflows, assigning work, tracking progress, and deciding what happens when an agent fails or escalates.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Service Choreography</p>
+          <p class="rosetta-desc">A peer-to-peer collaboration pattern where services interact directly via events, without central control over the sequence.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Agent Choreography</p>
+          <p class="rosetta-desc">A peer-to-peer collaboration pattern where agents coordinate directly through shared events or signals, without a central orchestrator directing each step.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Service Composition</p>
+          <p class="rosetta-desc">Combining multiple services to create higher-level business functionality, so a complete process can be assembled from parts built independently.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Agent Assembly (or Agent Build)</p>
+          <p class="rosetta-desc">Combining multiple agents to create complex autonomous systems and workflows, assembling specialists into something that completes an end-to-end process.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Loose Coupling</p>
+          <p class="rosetta-desc">Services are designed to have minimal dependencies on each other, so one can change or fail without forcing changes elsewhere.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Agent Autonomy</p>
+          <p class="rosetta-desc">Agents operate independently with minimal dependencies, making autonomous decisions within their granted scope rather than waiting on a controller for every step.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Service Granularity</p>
+          <p class="rosetta-desc">The level of functionality encapsulated within a single service, and the trade-off between many small services and fewer larger ones.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Agent Scope</p>
+          <p class="rosetta-desc">The breadth and depth of responsibilities assigned to a specific agent, which determines both what it can accomplish alone and how much of the system its failures reach.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Statelessness</p>
+          <p class="rosetta-desc">A design preference that services not retain client state between calls, so any instance can serve any request.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Session State Boundary</p>
+          <p class="rosetta-desc">An explicit definition of what an agent retains in operational memory between interactions and what it deliberately discards — since useful agents often need memory rather than none.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Idempotency</p>
+          <p class="rosetta-desc">A property ensuring repeated calls produce the same effect as a single call, making retries safe after a timeout or partial failure.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Idempotent Action</p>
+          <p class="rosetta-desc">A property ensuring a repeated agent action produces the same effect as a single execution, which matters more here because retries are often decided autonomously.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Circuit Breaker</p>
+          <p class="rosetta-desc">A resilience pattern that halts calls to a failing service to prevent cascading failure, resuming only once it recovers.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Agent Fallback Protocol</p>
+          <p class="rosetta-desc">A resilience pattern that halts delegation to a failing or underperforming agent and reroutes to a fallback agent or human escalation, rather than simply stopping.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Event-Driven Architecture</p>
+          <p class="rosetta-desc">Architecture where services respond to and produce events for loose coupling, with producers unaware of which consumers will react.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Agent Triggers</p>
+          <p class="rosetta-desc">Event-based activation mechanisms that prompt agents to take specific actions, so work begins when a condition is met rather than when someone invokes it.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Message Exchange</p>
+          <p class="rosetta-desc">Structured communication patterns between services, defining request/response, publish/subscribe, and the message shapes each side expects.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Agent Communication Protocol (ACP)</p>
+          <p class="rosetta-desc">Standardized methods for agents to exchange information and coordinate actions, covering not just message format but how intent, context, and results are conveyed.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Service Integration Protocol</p>
+          <p class="rosetta-desc">Standard protocols for web service communication and data exchange, such as SOAP and REST over HTTP.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Agent Integration Protocol (AIP)</p>
+          <p class="rosetta-desc">Standardized interfaces and protocols for agent communication and integration, so agents built on different platforms work together without bespoke adapters.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Interoperability</p>
+          <p class="rosetta-desc">Ability of different systems and services to work together effectively, across vendors, platforms, and data formats.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Cross-Agent Standards</p>
+          <p class="rosetta-desc">Protocols and standards enabling agents from different systems to collaborate, so a multi-agent workflow is not confined to one vendor's runtime.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Enterprise Integration Patterns (EIP)</p>
+          <p class="rosetta-desc">Standard patterns for integrating enterprise applications and services — named solutions to recurring routing, transformation, and messaging problems.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Agent Patterns</p>
+          <p class="rosetta-desc">Reusable design patterns for agent interaction, coordination, and integration, giving teams a shared name for structures they would otherwise reinvent.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Canonical Data Model</p>
+          <p class="rosetta-desc">A shared, standardized data schema used across services to avoid point-to-point translation between every pair of systems.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Canonical Context Model</p>
+          <p class="rosetta-desc">A shared, standardized schema for context entities so agents interpret the same situational data consistently across an enterprise, rather than each holding its own view.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Service Consumer / Provider</p>
+          <p class="rosetta-desc">The two parties in a service interaction: the caller and the service being called.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Requester / Fulfilling Agent</p>
+          <p class="rosetta-desc">The two parties in an agent-fulfilled intent: whoever originates the request — a person, another agent, or an orchestrator — and whichever agent fulfills it.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Service Versioning</p>
+          <p class="rosetta-desc">Managing multiple concurrent versions of a service interface as it evolves, so existing consumers keep working while new ones adopt the change.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Skill Versioning</p>
+          <p class="rosetta-desc">Managing multiple concurrent versions of an agent's skill set or behavior as it evolves through feedback and memory updates, so changes are traceable rather than silent.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Service Virtualization</p>
+          <p class="rosetta-desc">Creating virtual representations of services for testing and development, so teams can build against dependencies that are unavailable or costly to call.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Agent Virtualization</p>
+          <p class="rosetta-desc">Creating test agents by abstracting real-world conditions for testing, training, and development purposes, so behavior can be exercised safely before it touches production work.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">SLA (Service Level Agreement)</p>
+          <p class="rosetta-desc">Service Level Agreement defining performance, availability, and quality metrics, and what happens when they are not met.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Agent QoS</p>
+          <p class="rosetta-desc">Quality of Service metrics defining agent performance, reliability, and response standards, including accuracy and escalation rates alongside latency and uptime.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Service Level Objective (SLO)</p>
+          <p class="rosetta-desc">An internal target metric that supports meeting an external SLA, set tighter than the commitment to leave room to recover.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Agent Performance Objective</p>
+          <p class="rosetta-desc">An internal target metric supporting an agent's external QoS commitments, tracked continuously so degradation is caught before it breaches the commitment.</p>
+        </div>
+      </div>
+      <div class="rosetta-row">
+        <div class="rosetta-side soa">
+          <p class="rosetta-term">Governance</p>
+          <p class="rosetta-desc">Policies, processes, and controls for managing services throughout their lifecycle, from approval and deployment to retirement.</p>
+        </div>
+        <div class="rosetta-arrow">&rarr;</div>
+        <div class="rosetta-side agentic">
+          <p class="rosetta-term">Agentic Governance</p>
+          <p class="rosetta-desc">Framework for managing agent behavior, compliance, ethics, and lifecycle management, including audit trails, human oversight, and accountability for autonomous decisions.</p>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="wrap divider-top" id="downloads">
+  <h2>Downloads</h2>
+  <p>Everything here is free to use and share, with attribution. The JSON and CSV are the same twenty-eight pairs in machine-readable form — drop them into a glossary, a data catalog, or an architecture review deck.</p>
+
+  <div class="download-grid">
+    <a class="download" href="downloads/skan-agentic-ai-terminology-whitepaper.pdf">
+      <p class="dl-name">The whitepaper <span class="dl-meta">PDF</span></p>
+      <p class="dl-desc">The full paper: why the vocabulary gap matters, what SOA got right, what it got wrong, and what still needs standardizing beyond names.</p>
+    </a>
+    <a class="download" href="downloads/soa-agentic-terms.pdf">
+      <p class="dl-name">Terms sheet <span class="dl-meta">PDF</span></p>
+      <p class="dl-desc">All twenty-eight pairs on a formatted reference sheet, ready to print or circulate.</p>
+    </a>
+    <a class="download" href="downloads/soa-agentic-terms.csv">
+      <p class="dl-name">Terms <span class="dl-meta">CSV</span></p>
+      <p class="dl-desc">One row per pair, four columns. Opens in any spreadsheet.</p>
+    </a>
+    <a class="download" href="https://github.com/Skan-dot-ai/soa-to-agentic-terms/blob/main/mapping-table.json" target="_blank" rel="noopener">
+      <p class="dl-name">Terms <span class="dl-meta">JSON</span></p>
+      <p class="dl-desc">The canonical source the rest of this page is generated from.</p>
+    </a>
+  </div>
+</section>
+
+<section class="wrap divider-top">
+  <h2>Why this exists</h2>
+  <p>The definitional chaos costs real money. CIOs can't evaluate vendors when each one uses proprietary terminology. Development teams hit integration problems when two things both called "agents" turn out to work nothing alike. Risk management is close to impossible when the scope and capabilities of an "agentic system" are undefined.</p>
+  <p>SOA solved a version of this in the early 2000s, and it's worth being honest that it didn't solve it perfectly — SOA implementations drowned in complexity creep, fragmented across vendors anyway, and often shipped without the governance to hold them together. Those failures are as instructive as the successes, which is why the <a href="downloads/skan-agentic-ai-terminology-whitepaper.pdf">whitepaper</a> spends as much time on them.</p>
+</section>
+
+<section class="wrap divider-top">
+  <h2>What still needs standardizing</h2>
+  <p>A shared vocabulary is the start, not the finish. What the industry still needs is agent classification by autonomy level, protocols for how agents negotiate and collaborate, orchestration patterns that survive changing conditions, governance covering audit trails and human oversight, and quality standards that let you compare two implementations honestly.</p>
+  <p>We're not proposing to solve that alone, and we'd rather not see it solved proprietarily. If a pairing here is wrong, or one you need is missing, <a href="https://github.com/Skan-dot-ai/soa-to-agentic-terms/issues" target="_blank" rel="noopener">open an issue</a> — disagreement about where SOA's concepts stop working for agents is exactly the useful kind.</p>
+  <p>More on the thinking behind this, what it deliberately isn't, and how to use it: <a href="about/index.html">about this mapping</a>.</p>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <p>Published by Skan, Inc. · <a href="https://www.skan.ai">skan.ai</a></p>
+    <p>Prose licensed CC-BY 4.0. Structured data (mapping-table.json) licensed Apache 2.0.</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why this mapping exists — SOA-to-Agentic AI Terminology</title>
+<meta name="description" content="Why a shared vocabulary for agentic AI matters, why it borrows from Service-Oriented Architecture, and what this mapping is and isn't.">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:title" content="Why this mapping exists — SOA-to-Agentic AI Terminology">
+<meta property="og:description" content="Why a shared vocabulary for agentic AI matters, and what this mapping is and isn't.">
+<meta property="og:type" content="article">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Skan<span>.ai</span> — Agentic AI Taxonomy</a>
+    <nav>
+      <a href="../index.html">The mapping</a>
+      <a href="../index.html#downloads">Downloads</a>
+      <a href="https://github.com/Skan-dot-ai/soa-to-agentic-terms" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero wrap">
+  <p class="eyebrow">About</p>
+  <h1 style="max-width: 24ch;">Why this mapping exists</h1>
+  <p class="lede">Naming things is infrastructure. It's tempting to treat vocabulary as the soft part of a technical problem — something to sort out once the real architecture is settled. It usually works the other way round. You can't write a contract between two systems until both sides agree what the thing in the middle is called, and you can't govern a class of system whose boundaries nobody has drawn. Names come first, whether or not anyone plans them.</p>
+</div>
+
+<section class="wrap divider-top">
+  <h2>What this is</h2>
+  <p>A translation table. Twenty-eight concepts from Service-Oriented Architecture, each paired with its closest equivalent in agentic systems, with a plain description of both sides. It's published as a web page, as JSON and CSV, and as a formatted sheet you can print and put in front of people who don't read JSON.</p>
+  <p>It is small on purpose. The point isn't to define everything about agentic architecture — it's to give two people from different backgrounds a way to finish a sentence. An architect who spent a decade on service registries and an ML engineer who's been building tool-using agents for eighteen months are often describing the same structure with no overlapping words. This is a phrasebook for that conversation.</p>
+</section>
+
+<section class="wrap divider-top">
+  <h2>Why the terms come from SOA</h2>
+  <p>Because a vocabulary's value comes entirely from how many people already share it, and a brand-new one starts at zero. SOA's terms have been in working use for twenty years. Anyone who has designed an enterprise system knows what a contract is, what a registry does, what loose coupling buys you and what it costs. Naming the agentic equivalents after concepts that already carry meaning imports all of that understanding for free.</p>
+  <p>There's a limit to the analogy, and it's worth stating plainly rather than glossing it. Services execute what they were built to execute. Agents decide. That difference shows up right where you'd expect: a circuit breaker halts calls to a failing service, while an agent fallback might reroute to a different agent or escalate to a person — related idea, genuinely different mechanism. SOA also treats statelessness as a virtue, where agentic systems often need deliberate memory, so the useful translation isn't "avoid state" but "be explicit about which state you keep." The mapping gets you most of the way and then hands off. That's the honest claim.</p>
+  <p>It's also worth learning from where SOA went wrong, not just where it went right — the complexity creep, the vendor fragmentation that standardization was supposed to prevent, the governance that arrived late. The <a href="../downloads/skan-agentic-ai-terminology-whitepaper.pdf">whitepaper</a> spends real time on those failures, because a field copying SOA's vocabulary should know which parts of the experience not to copy.</p>
+</section>
+
+<section class="wrap divider-top">
+  <h2>What this isn't</h2>
+  <p>Not a standard. Nobody ratified this, and calling it a standard would be a claim we haven't earned. It's a proposal with a version number.</p>
+  <p>Not an architecture. Knowing what to call an agent catalog tells you nothing about how to build one, and nothing at all about whether you should.</p>
+  <p>Not a governance framework, an interaction protocol, or a certification scheme. Those are the genuinely hard problems — agent classification by autonomy level, protocols for negotiation and collaboration, orchestration that survives changing conditions, audit trails and human oversight, and metrics that let you compare two implementations honestly. All of them stay open. A vocabulary is the cheapest of the necessary pieces, which is a good argument for doing it first and a bad argument for stopping there.</p>
+</section>
+
+<section class="wrap divider-top">
+  <h2>Versions and contributions</h2>
+  <p>Version 2 has twenty-eight pairs. Version 1 had eighteen, covering the concepts with the most direct analogues; the rest arrived as the edges got clearer. It will keep moving, and the places it moves are the interesting ones — the pairings where an SOA concept nearly fits and then doesn't tell you what you actually needed to know.</p>
+  <p>If a pairing here is wrong, or one you rely on is missing, <a href="https://github.com/Skan-dot-ai/soa-to-agentic-terms/issues" target="_blank" rel="noopener">say so on GitHub</a>. Arguments about where the analogy breaks are the most useful contribution this can attract, more than additions — the breakages are where the vocabulary needs its own words rather than borrowed ones.</p>
+</section>
+
+<section class="wrap divider-top">
+  <h2>Licensing and citation</h2>
+  <p>Prose here is CC-BY 4.0; the structured data is Apache 2.0. Both mean: take it, use it, build on it, change it — just say where it came from. Reuse in a product glossary, a data catalog, an architecture review, a standards submission, or a course is all fine and none of it needs asking. <code>CITATION.cff</code> in the repository has machine-readable citation metadata if you're referencing it in something formal.</p>
+  <p>The honest measure of success is this mapping becoming redundant — the industry converging on shared terms, whether or not they're these ones.</p>
+</section>
+
+<section class="wrap divider-top">
+  <h2>Who publishes it</h2>
+  <p><a href="https://www.skan.ai" target="_blank" rel="noopener">Skan</a> works on observing how enterprise work actually gets executed and turning that into context AI systems can act on — which means spending a lot of time at the seam where agents meet real operational processes. That's the vantage point this came from: the vocabulary problem is one you hit constantly and unavoidably when you try to describe agentic systems to enterprise architects, risk teams, and each other.</p>
+  <p>Publishing it openly is deliberate. A vocabulary that belongs to one vendor isn't a vocabulary, it's a product glossary, and the industry has enough of those. This is offered to be argued with.</p>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <p>Published by Skan, Inc. · <a href="https://www.skan.ai">skan.ai</a></p>
+    <p>Prose licensed CC-BY 4.0. Structured data (mapping-table.json) licensed Apache 2.0.</p>
+  </div>
+</footer>
+
+</body>
+</html>
