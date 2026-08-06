@@ -2,6 +2,8 @@
 
 **Published by [Skan.ai](https://www.skan.ai)** · Prose licensed [CC-BY 4.0](LICENSE) · Structured data licensed [Apache 2.0](LICENSE-APACHE)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21823088.svg)](https://doi.org/10.5281/zenodo.21823088)
+
 **[Read it as a page →](https://skan-dot-ai.github.io/soa-to-agentic-terms/)**
 
 ## Why this exists
@@ -47,3 +49,12 @@ This is offered as a starting vocabulary, not a finished one. If you think a map
 Prose and documentation: [CC-BY 4.0](LICENSE). Structured data (`mapping-table.json`, and the CSV): [Apache 2.0](LICENSE-APACHE).
 
 In plain terms, both permit the same thing: copy it, adapt it, build on it, use it commercially — just credit Skan, Inc. and say if you changed it. You don't need to ask.
+
+## Citing this work
+
+Archived on Zenodo, so it can be cited durably:
+
+- **[10.5281/zenodo.21823088](https://doi.org/10.5281/zenodo.21823088)** — always resolves to the latest version
+- **[10.5281/zenodo.21823089](https://doi.org/10.5281/zenodo.21823089)** — this release, v2.0.0
+
+`CITATION.cff` carries the same metadata in machine-readable form, and GitHub's "Cite this repository" button reads it.

@@ -22,3 +22,11 @@ keywords:
 license: "CC-BY-4.0"
 version: 2.0.0
 date-released: "2026-08-05"
+doi: "10.5281/zenodo.21823089"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21823088"
+    description: "Concept DOI — always resolves to the latest version"
+  - type: doi
+    value: "10.5281/zenodo.21823089"
+    description: "Version DOI — this release (v2.0.0)"
