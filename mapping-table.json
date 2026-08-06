@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SOA-to-Agentic AI Terminology Mapping",
+  "version": "2.0.0",
+  "publisher": "Skan.ai",
+  "license": "Apache-2.0",
+  "description": "A structured mapping between Service-Oriented Architecture (SOA) concepts and their Agentic AI equivalents, offered as a starting vocabulary for the agentic enterprise. Not a claim on SOA as original work — an accelerant borrowed from a precedent the industry already validated.",
+  "mappings": [
+    {
+      "soa_term": "Service / Microservice",
+      "soa_description": "A discrete unit of functionality that can be accessed remotely and acted upon independently, deployed and versioned on its own so that changing it does not require changing its consumers.",
+      "agentic_term": "Agent",
+      "agentic_description": "An autonomous AI entity that can perform specific tasks, make decisions, and interact with other agents, choosing how to accomplish an objective rather than following a fixed sequence of steps."
+    },
+    {
+      "soa_term": "Microservices",
+      "soa_description": "Architectural approach using small, independently deployable services, each owning a narrow slice of business capability so teams can build, release, and scale them separately.",
+      "agentic_term": "Agent Tools",
+      "agentic_description": "Specialized, focused AI agents designed for specific tasks within larger systems, narrow enough to be reasoned about, tested, and replaced individually rather than as part of one monolithic agent."
+    },
+    {
+      "soa_term": "Common Services",
+      "soa_description": "Reusable services that provide shared functionality across multiple applications — authentication, notification, document generation — maintained once and consumed everywhere.",
+      "agentic_term": "Agentic Tools",
+      "agentic_description": "Reusable AI capabilities and functions that agents can utilize to perform common tasks, exposed as a shared library so every agent does not reimplement the same retrieval, extraction, or calculation."
+    },
+    {
+      "soa_term": "Service Contract",
+      "soa_description": "A formal specification defining how to interact with a service, including inputs, outputs, and constraints, so consumers integrate against the contract rather than the implementation.",
+      "agentic_term": "Agent Contract",
+      "agentic_description": "A specification defining an agent's capabilities, interaction protocols, and behavioral constraints — what it may do on its own, what it must escalate, and what callers can rely on."
+    },
+    {
+      "soa_term": "Service Registry",
+      "soa_description": "A directory where services are published and can be discovered by consumers, holding the endpoint, version, and contract for each registered service.",
+      "agentic_term": "Agent Catalog",
+      "agentic_description": "A repository where agents are registered and can be discovered by other agents or orchestrators, recording each agent's capabilities, ownership, and permitted scope."
+    },
+    {
+      "soa_term": "Service Discovery",
+      "soa_description": "A dynamic mechanism for locating available services at runtime, resolving which instance to call as deployments scale up and down.",
+      "agentic_term": "Agent Discovery",
+      "agentic_description": "A dynamic mechanism for locating available agents and their current capabilities at runtime, so work is routed to whichever agent is actually able and permitted to handle it."
+    },
+    {
+      "soa_term": "Service Bus (ESB)",
+      "soa_description": "Enterprise service bus providing message routing, transformation, and integration capabilities, so systems that do not share a data format can still exchange work.",
+      "agentic_term": "Execution Mesh",
+      "agentic_description": "Central orchestration layer managing agent lifecycle, routing, and coordination, carrying work between agents and the systems they act on."
+    },
+    {
+      "soa_term": "API Gateway",
+      "soa_description": "A single entry point managing routing, security, authentication, and rate limiting for service consumers, so those concerns are handled once at the edge rather than in every service.",
+      "agentic_term": "Agent Gateway",
+      "agentic_description": "A single entry point managing routing, authentication, and rate limiting for external systems and human users interacting with agents, and the place where access policy is applied."
+    },
+    {
+      "soa_term": "Orchestration (BPEL)",
+      "soa_description": "Coordinating multiple services to execute complex business processes, with the sequence, branching, and error handling defined centrally.",
+      "agentic_term": "Agentic Orchestrator",
+      "agentic_description": "System that coordinates multiple agents to execute complex automated workflows, assigning work, tracking progress, and deciding what happens when an agent fails or escalates."
+    },
+    {
+      "soa_term": "Service Choreography",
+      "soa_description": "A peer-to-peer collaboration pattern where services interact directly via events, without central control over the sequence.",
+      "agentic_term": "Agent Choreography",
+      "agentic_description": "A peer-to-peer collaboration pattern where agents coordinate directly through shared events or signals, without a central orchestrator directing each step."
+    },
+    {
+      "soa_term": "Service Composition",
+      "soa_description": "Combining multiple services to create higher-level business functionality, so a complete process can be assembled from parts built independently.",
+      "agentic_term": "Agent Assembly (or Agent Build)",
+      "agentic_description": "Combining multiple agents to create complex autonomous systems and workflows, assembling specialists into something that completes an end-to-end process."
+    },
+    {
+      "soa_term": "Loose Coupling",
+      "soa_description": "Services are designed to have minimal dependencies on each other, so one can change or fail without forcing changes elsewhere.",
+      "agentic_term": "Agent Autonomy",
+      "agentic_description": "Agents operate independently with minimal dependencies, making autonomous decisions within their granted scope rather than waiting on a controller for every step."
+    },
+    {
+      "soa_term": "Service Granularity",
+      "soa_description": "The level of functionality encapsulated within a single service, and the trade-off between many small services and fewer larger ones.",
+      "agentic_term": "Agent Scope",
+      "agentic_description": "The breadth and depth of responsibilities assigned to a specific agent, which determines both what it can accomplish alone and how much of the system its failures reach."
+    },
+    {
+      "soa_term": "Statelessness",
+      "soa_description": "A design preference that services not retain client state between calls, so any instance can serve any request.",
+      "agentic_term": "Session State Boundary",
+      "agentic_description": "An explicit definition of what an agent retains in operational memory between interactions and what it deliberately discards — since useful agents often need memory rather than none."
+    },
+    {
+      "soa_term": "Idempotency",
+      "soa_description": "A property ensuring repeated calls produce the same effect as a single call, making retries safe after a timeout or partial failure.",
+      "agentic_term": "Idempotent Action",
+      "agentic_description": "A property ensuring a repeated agent action produces the same effect as a single execution, which matters more here because retries are often decided autonomously."
+    },
+    {
+      "soa_term": "Circuit Breaker",
+      "soa_description": "A resilience pattern that halts calls to a failing service to prevent cascading failure, resuming only once it recovers.",
+      "agentic_term": "Agent Fallback Protocol",
+      "agentic_description": "A resilience pattern that halts delegation to a failing or underperforming agent and reroutes to a fallback agent or human escalation, rather than simply stopping."
+    },
+    {
+      "soa_term": "Event-Driven Architecture",
+      "soa_description": "Architecture where services respond to and produce events for loose coupling, with producers unaware of which consumers will react.",
+      "agentic_term": "Agent Triggers",
+      "agentic_description": "Event-based activation mechanisms that prompt agents to take specific actions, so work begins when a condition is met rather than when someone invokes it."
+    },
+    {
+      "soa_term": "Message Exchange",
+      "soa_description": "Structured communication patterns between services, defining request/response, publish/subscribe, and the message shapes each side expects.",
+      "agentic_term": "Agent Communication Protocol (ACP)",
+      "agentic_description": "Standardized methods for agents to exchange information and coordinate actions, covering not just message format but how intent, context, and results are conveyed."
+    },
+    {
+      "soa_term": "Service Integration Protocol",
+      "soa_description": "Standard protocols for web service communication and data exchange, such as SOAP and REST over HTTP.",
+      "agentic_term": "Agent Integration Protocol (AIP)",
+      "agentic_description": "Standardized interfaces and protocols for agent communication and integration, so agents built on different platforms work together without bespoke adapters."
+    },
+    {
+      "soa_term": "Interoperability",
+      "soa_description": "Ability of different systems and services to work together effectively, across vendors, platforms, and data formats.",
+      "agentic_term": "Cross-Agent Standards",
+      "agentic_description": "Protocols and standards enabling agents from different systems to collaborate, so a multi-agent workflow is not confined to one vendor's runtime."
+    },
+    {
+      "soa_term": "Enterprise Integration Patterns (EIP)",
+      "soa_description": "Standard patterns for integrating enterprise applications and services — named solutions to recurring routing, transformation, and messaging problems.",
+      "agentic_term": "Agent Patterns",
+      "agentic_description": "Reusable design patterns for agent interaction, coordination, and integration, giving teams a shared name for structures they would otherwise reinvent."
+    },
+    {
+      "soa_term": "Canonical Data Model",
+      "soa_description": "A shared, standardized data schema used across services to avoid point-to-point translation between every pair of systems.",
+      "agentic_term": "Canonical Context Model",
+      "agentic_description": "A shared, standardized schema for context entities so agents interpret the same situational data consistently across an enterprise, rather than each holding its own view."
+    },
+    {
+      "soa_term": "Service Consumer / Provider",
+      "soa_description": "The two parties in a service interaction: the caller and the service being called.",
+      "agentic_term": "Requester / Fulfilling Agent",
+      "agentic_description": "The two parties in an agent-fulfilled intent: whoever originates the request — a person, another agent, or an orchestrator — and whichever agent fulfills it."
+    },
+    {
+      "soa_term": "Service Versioning",
+      "soa_description": "Managing multiple concurrent versions of a service interface as it evolves, so existing consumers keep working while new ones adopt the change.",
+      "agentic_term": "Skill Versioning",
+      "agentic_description": "Managing multiple concurrent versions of an agent's skill set or behavior as it evolves through feedback and memory updates, so changes are traceable rather than silent."
+    },
+    {
+      "soa_term": "Service Virtualization",
+      "soa_description": "Creating virtual representations of services for testing and development, so teams can build against dependencies that are unavailable or costly to call.",
+      "agentic_term": "Agent Virtualization",
+      "agentic_description": "Creating test agents by abstracting real-world conditions for testing, training, and development purposes, so behavior can be exercised safely before it touches production work."
+    },
+    {
+      "soa_term": "SLA (Service Level Agreement)",
+      "soa_description": "Service Level Agreement defining performance, availability, and quality metrics, and what happens when they are not met.",
+      "agentic_term": "Agent QoS",
+      "agentic_description": "Quality of Service metrics defining agent performance, reliability, and response standards, including accuracy and escalation rates alongside latency and uptime."
+    },
+    {
+      "soa_term": "Service Level Objective (SLO)",
+      "soa_description": "An internal target metric that supports meeting an external SLA, set tighter than the commitment to leave room to recover.",
+      "agentic_term": "Agent Performance Objective",
+      "agentic_description": "An internal target metric supporting an agent's external QoS commitments, tracked continuously so degradation is caught before it breaches the commitment."
+    },
+    {
+      "soa_term": "Governance",
+      "soa_description": "Policies, processes, and controls for managing services throughout their lifecycle, from approval and deployment to retirement.",
+      "agentic_term": "Agentic Governance",
+      "agentic_description": "Framework for managing agent behavior, compliance, ethics, and lifecycle management, including audit trails, human oversight, and accountability for autonomous decisions."
+    }
+  ]
+}
