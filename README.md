@@ -4,7 +4,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21823088.svg)](https://doi.org/10.5281/zenodo.21823088)
 
-**[Read it as a page →](https://skan-dot-ai.github.io/soa-to-agentic-terms/)**
+**[Read it as a page →](https://skandotai.github.io/soa-to-agentic-terms/)**
 
 ## Why this exists
 

@@ -5,7 +5,7 @@ type: dataset
 authors:
   - name: "Skan, Inc."
     website: "https://www.skan.ai"
-repository-code: "https://github.com/Skan-dot-ai/soa-to-agentic-terms"
+repository-code: "https://github.com/Skandotai/soa-to-agentic-terms"
 url: "https://www.skan.ai"
 abstract: >
   A structured mapping between Service-Oriented Architecture (SOA) concepts
