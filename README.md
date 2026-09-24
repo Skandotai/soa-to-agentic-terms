@@ -24,6 +24,10 @@ This is explicitly **not** a claim that Skan invented these agentic terms, or th
 
 A complete architectural standard. The mapping is a vocabulary, not a governance framework, an interaction protocol spec, or a certification scheme. Those are harder problems — agent classification and autonomy levels, interaction and negotiation protocols, adaptive orchestration patterns, governance and audit frameworks, and performance/quality standards — and they remain open. See [`context.md`](context.md) for the short version of the argument, or the [whitepaper](whitepaper.md) ([PDF](docs/downloads/skan-agentic-ai-terminology-whitepaper.pdf)) for the full one — including what SOA got wrong, and why those failures matter here.
 
+## What comes next
+
+A vocabulary gives people the same words; it doesn't fix how the things those words name relate to each other. The companion **[Agentic Ontology of Work](https://github.com/Skandotai/agentic-ontology-of-work)** ([site](https://skandotai.github.io/agentic-ontology-of-work/)) takes that step. It's a formal model of agentic work, with a five-level autonomy scale, rules for human oversight, and audit trails you can check. It's published as an OWL ontology with SHACL shapes and JSON Schemas. Its [crosswalk](https://github.com/Skandotai/agentic-ontology-of-work/blob/main/crosswalks/soa-to-agentic-terms.csv) maps each of the twenty-eight agentic terms here to the part of the ontology that formalizes it.
+
 ## What's here
 
 ```
@@ -32,17 +36,19 @@ soa-to-agentic-terms/
 ├── context.md                    the short version: why this mapping exists
 ├── whitepaper.md                 the full paper on standardizing Agentic AI terminology
 ├── CITATION.cff                  citation metadata (powers GitHub's "Cite this repository")
+├── CONTRIBUTING.md               how to propose a change
+├── tools/make_assets.py          renders the PDFs and images from the JSON and the whitepaper
 └── docs/                         the published site
     ├── index.html                  the mapping, rendered
     ├── about/index.html            the thinking behind it
     └── downloads/                  terms sheet (PDF), terms (CSV), whitepaper (PDF)
 ```
 
-`mapping-table.json` is the canonical source. The rendered table, the CSV, and the terms sheet are all derived from it, so if they ever disagree, the JSON is right.
+`mapping-table.json` is the canonical source. The rendered table, the CSV, and the terms sheet are all derived from it, so if they ever disagree, the JSON is right. `tools/make_assets.py` regenerates the terms sheet and whitepaper PDFs.
 
 ## Contributing
 
-This is offered as a starting vocabulary, not a finished one. If you think a mapping is wrong, incomplete, or missing — open an issue or a pull request. Disagreement on where SOA concepts break down for agentic systems is expected and useful.
+This is offered as a starting vocabulary, not a finished one. If you think a mapping is wrong, incomplete, or missing — open an issue or a pull request. See [CONTRIBUTING.md](CONTRIBUTING.md). Disagreement on where SOA concepts break down for agentic systems is expected and useful.
 
 ## License
 
