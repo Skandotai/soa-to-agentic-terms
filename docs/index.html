@@ -17,25 +17,92 @@
 <meta property="og:image:height" content="640">
 <meta property="og:image:alt" content="Four SOA terms beside their agentic equivalents: Service to Agent, Service Registry to Agent Catalog, SLA to Agent QoS, Circuit Breaker to Agent Fallback.">
 <meta property="og:site_name" content="Skan.ai">
+<link rel="canonical" href="https://skandotai.github.io/soa-to-agentic-terms/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="SOA-to-Agentic AI Terminology Mapping">
 <meta name="twitter:image" content="https://skandotai.github.io/soa-to-agentic-terms/assets/social-preview.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600;700&family=JetBrains+Mono:wght@400&display=swap">
+<meta name="theme-color" content="#161714">
 <link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "SOA-to-Agentic AI Terminology Mapping",
+  "description": "Twenty-eight Service-Oriented Architecture concepts translated into their Agentic AI equivalents: a shared vocabulary for the agentic enterprise.",
+  "url": "https://skandotai.github.io/soa-to-agentic-terms/",
+  "sameAs": "https://github.com/Skandotai/soa-to-agentic-terms",
+  "identifier": "https://doi.org/10.5281/zenodo.21823088",
+  "version": "2.0.0",
+  "datePublished": "2026-08-05",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "creator": {
+    "@type": "Organization",
+    "name": "Skan, Inc.",
+    "url": "https://www.skan.ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Skan, Inc.",
+    "url": "https://www.skan.ai"
+  },
+  "license": [
+    "https://creativecommons.org/licenses/by/4.0/",
+    "https://www.apache.org/licenses/LICENSE-2.0"
+  ],
+  "keywords": [
+    "agentic AI",
+    "service-oriented architecture",
+    "terminology",
+    "enterprise AI",
+    "AI governance"
+  ],
+  "isRelatedTo": {
+    "@type": "Dataset",
+    "name": "Agentic Ontology of Work (AOW)",
+    "url": "https://skandotai.github.io/agentic-ontology-of-work/",
+    "identifier": "https://w3id.org/aow"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://github.com/Skandotai/soa-to-agentic-terms/blob/main/mapping-table.json"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://skandotai.github.io/soa-to-agentic-terms/downloads/soa-agentic-terms.csv"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/pdf",
+      "contentUrl": "https://skandotai.github.io/soa-to-agentic-terms/downloads/soa-agentic-terms.pdf"
+    }
+  ]
+}
+</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
 <header class="site">
   <div class="wrap">
-    <a class="brand" href="index.html">Skan<span>.ai</span> — Agentic AI Taxonomy</a>
-    <nav>
+    <a class="brand" href="index.html">SOA-to-Agentic AI Terminology <span>· Skan<b>.ai</b></span></a>
+    <nav aria-label="Site">
       <a href="about/index.html">About</a>
       <a href="#downloads">Downloads</a>
       <a href="https://www.skan.ai" target="_blank" rel="noopener">skan.ai</a>
+      <a href="https://skandotai.github.io/agentic-ontology-of-work/">Ontology of Work</a>
       <a href="https://github.com/Skandotai/soa-to-agentic-terms" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </div>
 </header>
 
+<main id="main">
 <div class="hero wrap">
   <p class="eyebrow">The vocabulary problem</p>
   <h1 style="max-width: 20ch;">SOA-to-Agentic AI Terminology Mapping</h1>
@@ -404,11 +471,23 @@
   <p>More on the thinking behind this, what it deliberately isn't, and how to use it: <a href="about/index.html">about this mapping</a>.</p>
 </section>
 
+<section class="wrap divider-top" id="next">
+  <div class="callout">
+    <p class="eyebrow">Next step</p>
+    <h2>From vocabulary to structure: the Agentic Ontology of Work</h2>
+    <p>This mapping gives people the same words. The companion <a href="https://skandotai.github.io/agentic-ontology-of-work/">Agentic Ontology of Work</a> takes on some of the harder problems listed above: it defines how the terms connect, grades autonomy on a five-level scale with rules for human oversight, and makes audit trails checkable. It's published as a whitepaper and as an OWL ontology with SHACL shapes and JSON Schemas, and a <a href="https://github.com/Skandotai/agentic-ontology-of-work/blob/main/crosswalks/soa-to-agentic-terms.csv">crosswalk</a> maps each of the twenty-eight agentic terms here to the part of the ontology that formalizes it.</p>
+    <p><a class="btn primary" href="https://skandotai.github.io/agentic-ontology-of-work/">Explore the ontology</a></p>
+  </div>
+</section>
+
+</main>
+
 <footer class="site">
   <div class="wrap">
     <p>Published by Skan, Inc. · <a href="https://www.skan.ai">skan.ai</a></p>
     <p>Prose licensed CC-BY 4.0. Structured data (mapping-table.json) licensed Apache 2.0.</p>
     <p>Cite this work: <a href="https://doi.org/10.5281/zenodo.21823088">doi.org/10.5281/zenodo.21823088</a></p>
+    <p class="family">Also from Skan.ai: <a href="https://skandotai.github.io/agentic-ontology-of-work/">Agentic Ontology of Work</a>, the structure behind this vocabulary</p>
   </div>
 </footer>
 
