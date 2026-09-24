@@ -24,9 +24,13 @@ This is explicitly **not** a claim that Skan invented these agentic terms, or th
 
 A complete architectural standard. The mapping is a vocabulary, not a governance framework, an interaction protocol spec, or a certification scheme. Those are harder problems — agent classification and autonomy levels, interaction and negotiation protocols, adaptive orchestration patterns, governance and audit frameworks, and performance/quality standards — and they remain open. See [`context.md`](context.md) for the short version of the argument, or the [whitepaper](whitepaper.md) ([PDF](docs/downloads/skan-agentic-ai-terminology-whitepaper.pdf)) for the full one — including what SOA got wrong, and why those failures matter here.
 
-## What comes next
+## Related project
 
-A vocabulary gives people the same words; it doesn't fix how the things those words name relate to each other. The companion **[Agentic Ontology of Work](https://github.com/Skandotai/agentic-ontology-of-work)** ([site](https://skandotai.github.io/agentic-ontology-of-work/)) takes that step. It's a formal model of agentic work, with a five-level autonomy scale, rules for human oversight, and audit trails you can check. It's published as an OWL ontology with SHACL shapes and JSON Schemas. Its [crosswalk](https://github.com/Skandotai/agentic-ontology-of-work/blob/main/crosswalks/soa-to-agentic-terms.csv) maps each of the twenty-eight agentic terms here to the part of the ontology that formalizes it.
+The Agentic Ontology of Work (AOW) defines how these terms relate to each other. It includes a five-level autonomy scale, rules for human oversight, and checks that trace each result to its business objective. It is published as an OWL ontology with SHACL shapes and JSON Schemas.
+
+- Repository: https://github.com/Skandotai/agentic-ontology-of-work
+- Website: https://skandotai.github.io/agentic-ontology-of-work/
+- Crosswalk from the 28 agentic terms to AOW: https://github.com/Skandotai/agentic-ontology-of-work/blob/main/crosswalks/soa-to-agentic-terms.csv
 
 ## What's here
 

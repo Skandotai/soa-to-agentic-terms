@@ -108,7 +108,7 @@ def whitepaper() -> str:
              f'<h1>{e(title)}</h1><p class="sub">{e(subtitle)}</p><div class="meta">'
              f'<p>Published by Skan, Inc. · skan.ai</p>'
              f'<p>Companion to the SOA-to-Agentic AI Terminology Mapping · github.com/Skandotai/soa-to-agentic-terms</p>'
-             f'<p>See also the Agentic Ontology of Work · skandotai.github.io/agentic-ontology-of-work</p>'
+             f'<p>Related: Agentic Ontology of Work · https://skandotai.github.io/agentic-ontology-of-work/</p>'
              f'<p>Licensed CC-BY 4.0. Attribution to Skan, Inc. required for reuse.</p></div></div>')
     return page_html(PAPER_CSS, cover + body_html)
 
