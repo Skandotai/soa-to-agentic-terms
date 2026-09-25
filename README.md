@@ -31,6 +31,7 @@ The Agentic Ontology of Work (AOW) defines how these terms relate to each other.
 - Repository: https://github.com/Skandotai/agentic-ontology-of-work
 - Website: https://skandotai.github.io/agentic-ontology-of-work/
 - DOI: https://doi.org/10.5281/zenodo.22945904
+- Permanent identifier: https://w3id.org/aow
 - Crosswalk from the 28 agentic terms to AOW: https://github.com/Skandotai/agentic-ontology-of-work/blob/main/crosswalks/soa-to-agentic-terms.csv
 
 ## What's here
